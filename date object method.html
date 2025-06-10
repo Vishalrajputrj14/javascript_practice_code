@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p> -->
+
+    <h1> date :  <span  id="text"> </span></h1>
+
+    <script>
+        var date = new Date();
+        var day = date.getDate();
+        var month = date.getMonth();
+        var year = date.getFullYear();
+        var hour = date.getHours();
+
+        // document.write(day + "/" + month + "/" + year + " " + hour + " hours");
+        document.getElementById("text").innerHTML = day + "/" + month + "/" + year + " " + hour + " hours";
+        document.write("<br>");
+
+        var userDate = prompt("Enter a date (YYYY-MM-DD):");
+        var inputDate = new Date(userDate);
+        var inputDay = inputDate.getDate();
+        var inputMonth = inputDate.getMonth() + 1; // Months are zero-based
+        var inputYear = inputDate.getFullYear();
+        var inputHour = inputDate.getHours();
+        document.write("<br>" + inputDay + "/" + inputMonth + "/" + inputYear + " " + inputHour + " hours");
+    </script>
+</body>
+</html>

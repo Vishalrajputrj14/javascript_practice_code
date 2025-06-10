@@ -1,0 +1,97 @@
+fullname = "vishal rajput";
+age = "18";
+price = "120.20";
+redius = "15";
+a = null;
+y = undefined;
+
+isfollow =  true;
+
+console.log(isfollow);
+
+// js laung is not case sensitive "a" & "A" id different
+
+ fullname = "vishal";
+ FULLNAME = "VISHAL";
+
+ console.log(fullname);
+ console.log(FULLNAME);
+
+//  only lettars digits underscore(-)& $ is allowed. (not evan space) for em and anvelidt value 123fullname ="shyam";= ye value bekar hai jo kam nhi kare gi
+
+
+fullname = "vishal rajput";
+_fullname = "ram";
+$fullname = "shyam";
+
+console.log(fullname);
+console.log(_fullname);
+ console.log($fullname);
+
+//  let ,const & var keyworad hai jo phele se difine varibles hote hai 
+
+var age = 18;
+
+var age = 20;
+
+var age = 25;
+
+console.log(age);
+
+// let verible 
+
+let name = "vishal";
+
+name = "vishal";
+name = "yogesh";
+name = "vishu";
+
+console.log(name);
+
+//  const verible
+
+
+const id = "200";
+
+
+console.log(id);
+
+//  exmple let me hum keval let mukuu; likh ke chor denge toh undifind likha aayega 
+
+
+let mukuu;
+
+mukuu = "20";
+console.log(mukuu);
+
+//  blocks code
+
+
+{
+    let a = "vishal";
+    console.log(a);
+}
+
+{
+    let a = "vishal";
+    console.log(a);
+    
+}
+// bigInt & simubul
+let x = BigInt("123123");
+
+let v = Symbol("hello!!");
+
+//  conest
+
+const student = {
+    fullname : "vishalrajput",
+    age : 20,
+   cgpa : 2.5,
+   ispass : true,
+
+};
+ 
+student["age"] = student["age"] + 1;
+
+console.log(student);

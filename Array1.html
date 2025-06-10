@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    Array . html
+    </title>
+</head>
+<body>
+    <script>
+     marks = [23,42,58,20,258,23,25];
+     document.write(marks.length);  // property
+     document.write("<br>")
+     document.write(marks);
+     document.write("<br>")
+
+
+     let  heroes = ["mikuu", "laddu", "buggu", "duggu", "beto" , "vishal"];
+      document.write(heroes);
+      document.write("<br>")
+      document.write(heroes.length) // property
+      document.write("<br>")
+
+      let state_10 = ["jaipur","bharatpur" , "dehli", "kota"];
+      document.write(state_10.length) // property
+      document.write("<br>")
+      document.write(state_10);
+
+
+
+
+      document.write("<br> <br>")
+
+      document.write(marks[2])
+      document.write("<br>")
+
+      document.write(heroes[3])
+      document.write("<br>")
+
+
+      document.write(heroes[0] , marks[4], state_10[2],"<br>")
+
+      let emp = new Object();
+emp.id = 15468;
+emp.Name = "vishalrajput";
+emp.selry = 850600;
+
+document.write(emp.id + " " + emp.Name + " " + emp.selry);
+
+
+let vishal = {
+    fristName : "vishal",
+    lastName1 : "rajput",
+    phno :  963963963,
+};
+// document.write(JSON.stringify(vishal))
+document.write(`print info ${vishal.fristName} ${vishal.lastName1} ${vishal.phno}`)
+
+
+    </script>
+</body>
+</html>

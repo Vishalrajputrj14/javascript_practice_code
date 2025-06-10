@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> carent time <span id="text"></span></h1>
+    <h1> carent time <span id="text1"></span></h1>
+    <p id="demo"></p>
+
+<script>
+     let today = new Date()
+     let month = today.getMonth()
+     let day = today.getDate()
+     let year = today.getFullYear()
+     document.getElementById("text").innerHTML= month + "/" + day + "/" + year;
+
+
+     
+            let today1 = new Date();
+        let h = today1.getHours();
+        let m = today1.getMinutes();
+        let s = today1.getSeconds(); // Here "getSecond" should be "getSeconds"
+
+        document.getElementById("text1").innerHTML = h + "/" + m + "/" + s;
+
+
+ let a = Math.abs(7.25);
+ let b = Math.abs(50.1);
+ let c = Math.abs(null);
+ let d = Math.abs("hello")
+ let e = Math.abs(5-2);
+
+ document.getElementById("demo").innerHTML = a + "<br>" + b + "<br>" + c + " <br>" + d + "<br>" + e ;
+
+
+
+ document.write(Math.ceil(2.8));
+ document.write("<br> <br>")
+ document.write(Math.ceil(6.8));
+ document.write("<br> <br>")
+
+document.writeln(Math.max(23,25,2,50,80,950,1))
+document.write("<br> <br>")
+document.writeln(Math.max(-23,-25,-2,5-0,-80,-950,-1))
+document.write("<br> <br>")
+document.writeln(Math.min(20,20,14,15,16));
+document.write("<br> <br>")
+document.writeln(Math.pow(2,5));
+document.write("<br> <br>")
+document.writeln(Math.random());
+document.write("<br> <br>")
+document.writeln(Math.trunc(12.24));
+document.writeln(20< 24);
+document.writeln(10< 5);
+
+
+
+
+</script>
+</body>
+</html>

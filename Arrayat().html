@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Aarray at () get the third element of fruits using at() method -->
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <h1>
+        the at() method returns an idexed element from on arry
+    </h1>
+
+    <script>
+        let dogs = ["bulldog", "beagle", "rottweiler", "german shepherd"];
+        let dog = dogs.at(1);
+        document.getElementById("demo").innerHTML = dog;
+        document.getElementById("demo1").innerHTML = dogs;
+
+
+
+        // the length the length (size) of an array
+
+        let fruits = ["banana", "orange", "apple", "mango"];
+        let fruit = fruits.length;
+        document.getElementById("demo2").innerHTML = fruit;
+       document.getElementById("demo3").innerHTML = fruits;
+
+
+        //  javascript array constructor
+        let cars = new Array("BMW", "Volvo", "Saab", "Ford");
+for(let i = 0; i < cars.length; i++){
+    document.getElementById("demo3").innerHTML += cars[i] + "<br>";
+}
+
+
+        for(let b = 1; b <= 100; b++){ 
+        if(b%2 === 2)
+            document.write("the loop is done");
+            document.write(b + "<br>");
+        }
+    </script>
+</body>
+</html>

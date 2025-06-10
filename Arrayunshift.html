@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- the unshift() method adds new elements to the beginnig on array -->
+     <P id="demo"></P>
+     <p id="demo1"></p>
+     <p id="demo2"></p>
+     <p id="demo3"></p>
+
+
+    <script>
+   let marketing = ["facebook", "instagram", "twitter", "linkedin"];
+    document.getElementById("demo").innerHTML = marketing;
+    marketing.unshift("facebook", "pinterest");
+    document.getElementById("demo").innerHTML = marketing;
+
+ const books = ["maths", "science", "english", "hindi"];
+    document.getElementById("demo1").innerHTML = books;
+    books.unshift("history", "geography");
+    document.getElementById("demo1").innerHTML = books;
+   
+
+    // the unshift() method returns the new array length
+
+    let tools = ["hammer", "screwdriver", "wrench", "saw"];
+    document.getElementById("demo2").innerHTML = tools;
+    let newLength = tools.unshift("pliers", "tape measure");
+    document.getElementById("demo3").innerHTML = tools;
+    // document.getElementById("demo3").innerHTML = newLength;
+
+
+    
+    </script>
+</body>
+</html>

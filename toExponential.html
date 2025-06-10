@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"> print by number</p>
+    <script>
+        let x = 9.656;
+        document.getElementById("demo").innerHTML = x.toExponential();
+        x.toExponential(2);
+        x.toExponential(4);
+        x.toExponential(6);
+        x.toExponential(8);
+        document.getElementById("demo").innerHTML = x.toExponential();
+    </script>
+</body>
+</html>

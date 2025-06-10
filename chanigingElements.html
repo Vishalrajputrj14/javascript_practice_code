@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        //  Array Elements are accessed using their index number
+         
+        let cars = ["BMW", "Volvo", "Saab", "Ford"];
+        document.getElementById("demo").innerHTML = cars;
+        cars[0] = "Toyota";
+        document.getElementById("demo").innerHTML = cars.length;
+ 
+        let text = "vishal";
+        document.write(text[0]);
+
+
+        let month = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+      document.getElementById("demo1").innerHTML = month;
+        month[2] = "feb";
+        document.getElementById("demo2").innerHTML = month;
+        
+        </script>
+</body>
+</html>

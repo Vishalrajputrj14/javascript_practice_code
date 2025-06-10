@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // exmple 1st
+        function vishal (){
+            alert("sorry this is a savar problem");
+        }
+
+// /exmple 2st
+
+        function  getcube(numbar){
+            alert(numbar*numbar*numbar);
+
+        }
+// exmple 3st
+
+function getInfo(){
+    return " hello vishal ! how are you "
+
+}
+document.write(getInfo())
+
+//  Aarrey 
+let Aarrey =[7,9,5,8,4];
+// let newaary = [5,9,7,8,7];
+let max = Math.max.apply(null,Aarrey)
+document.write(max);
+// Aarrey  exmple 2st
+
+let array = [123589,258,50];
+let newaary = [5,9,7,8,7];
+array.push.apply(array,newaary);
+document.write(array)
+// Aarrey  exmple 3st
+document.write("<br><br>")
+
+let arraya = ["vishal"];
+let newaarya = ["rajput"];
+array.push.apply(arraya,newaarya);
+document.write(array)
+
+const personname = {
+
+fristname: "taylar",
+lastname : " jackson ",
+};
+
+function greet(wish, message){
+    return ` ${this.fristname}, ${wish}, ${message};`
+
+}
+
+let vishal = greet.apply(personname,["good morning" , "how are you"]);
+
+document.write(vishal)
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+ <button type="button" value="click"  onclick="getcube(5)" >click</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <button type="button" onclick="vishal()" value="callfun"> click me hare </button>
+</body>
+</html>

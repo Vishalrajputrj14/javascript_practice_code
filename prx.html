@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script> 
+
+        const age = prompt("entar your age ");
+        let student ;
+        if(age <= 18){
+             student = " jounir ";
+
+        }
+        else if( age <= 25){
+            student = " sinear";
+        }
+
+        else if( age <= 40){
+            student = " trenar";
+        }
+        else if( age <= 60){
+            student = " techar ";
+        }
+        else{
+             student = " middal";
+        }
+        document.write(` student ${student}`);
+
+     document.write("<br> <br>")
+
+         let haight = prompt("entar tha bese tarigle ");
+         let width = prompt("entar tha bese height and taringle");
+         let area = (haight * width )/2;
+         document.write(`base tarigle ${area}`)
+
+         document.write("<br> <br>")
+
+         const num1 = parseInt(prompt("entar tha numbar ...? "));
+         const num2 = parseInt(prompt("entar tha numbar ....?"));
+         const opreatar = prompt("+,-,*,/,%")
+
+         let resalt;
+
+         switch(opreatar){
+            case "+":
+                resalt = num1 + num2
+                document.write(`${num1} + ${num2} = ${resalt}`)
+                break
+
+
+                case "-":
+                resalt = num1 - num2
+                document.write(`${num1} - ${num2} = ${resalt}`)
+                break
+
+                case "*":
+                resalt = num1 * num2
+                document.write(`${num1} * ${num2} = ${resalt}`)
+                break
+
+
+                case "/":
+                resalt = num1 / num2
+                document.write(`${num1} / ${num2} = ${resalt}`)
+                break
+
+
+                case "%":
+                resalt = num1 % num2
+                document.write(`${num1} % ${num2} = ${resalt}`)
+                break
+
+                
+              
+                default :
+
+                document.write("Invalid operator");
+
+         }
+
+
+        //  let numbar = parseInt(prompt("entar your fibocci numbar..?"));
+        //  let n1 = 0, n2 = 1, nexttarm;
+        //  document.write("fibocci <br>")
+        //  for(let i = 1 ;i <= numbar; i++){
+        //     document.write(n1 + " ");
+        //     nexttarm = n1 + n2;
+        //     n1 = n2;
+        //     n2 = nexttarm;
+        //  }
+
+
+         let numbar = parseInt(prompt("entar your no... ?"))
+         let n1 = 0;
+          n2 = 1;
+          nexttarm;
+         document.write("fibpcci <br>")
+         for(let i = 1; i <= numbar; i++ ){
+            document.write(n1+ " ");
+            nexttarm = n1 + n2;
+            n1 = n2;
+            n2 = nexttarm;
+         }
+        //  Math.max ese jada numbar largst hota hai oor Math.min ese km hota hai 
+
+         let numbar1 = prompt("entar your frist no...");
+         let numbar2 = prompt("entar your sceomd no....");
+         let numbar3 = prompt("entar your last no... ");
+
+         const vishal =Math.max(numbar1,numbar2,numbar3);
+         document.write(`largst no ${vishal}`)
+
+
+    //      let num1 = prompt("entar your frist no...");
+    //      let num2 = prompt("entar your sceomd no....");
+    //      let num3 = prompt("entar your last no... ");
+
+    //      const andy =Math.min(num1,num2,num3);
+    //      document.write(`largst no ${andy}`)
+    // </script>
+</body>
+</html>

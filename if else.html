@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bitwise opretar</title>
+</head>
+<body>
+    <script>
+//         function vishal(){
+//             const a = 12;
+//             const b = 25,
+//             ruslt = a * b;
+//             document.write(ruslt)
+//         }
+//         vishal()
+
+//         document.write("<br br >")
+
+//         // conditional statement 
+
+         let mode = prompt("intar your color")
+         let color;
+    if( mode === "bleck"){
+             color = "bleck";
+         }
+         else if( mode === "blue"){
+             color = "blue";
+         }
+         else if(mode === "pink"){
+            color = "pink";
+       }
+       else{ 
+           color = "white";
+       }
+
+       document.write(` confime your color ${color}`)
+        document.write("<br br >")
+
+        
+// //         // conditional statement 
+
+//         let age = prompt("intar your age ")
+//         let student ;
+//         if( age < 18){
+//             student = "joniar";
+//         }
+//         else if(age < 30  ){
+//             student = "senior";
+//         }
+//         else if(age < 80){
+//             student = "bradh";
+//         }
+//         else{ 
+//             student = "middle";
+//         }
+
+//         document.write( ` studants = ${student}`)
+
+//         // tanrry opreatar
+//         document.write("<br br >")
+
+
+//         let  AGE = prompt( "intar your age " );
+// let note = (AGE >= 18 )? "ADULT" : "NOT ADULT ";
+// document.write(` ${note} confirm:`);
+
+// document.write("<br br >")
+
+// function vishal(){
+//  let a = prompt("intar your numbar");
+ 
+//  if( a == 10){
+//         document.write("a is equal tha numbar ")
+// }
+
+//  else if( a == 20){
+//     document.write("a is equal tha numbar ")
+// }
+
+//  else{
+//     document.write("a is not equal numbar 20,10, ")
+// }
+
+
+
+// }
+// vishal()
+
+// switch statement example
+
+//   let rodlight = prompt(" intar your trafikelight");
+//   let msg = "";
+
+//   switch( rodlight){
+
+//     case "red":
+//         msg = " stop tha car";
+//         break;
+
+//         case "yellow":
+//             msg = " propare to stop";
+//             break;
+
+//         case "green":
+//         msg = "proceese tha centar driving ";
+//         break;
+
+//         default :
+//         msg = " nathing tha color "
+//   }
+
+// document.write(msg);
+
+
+// let a = prompt("intar your state pin code....? ");
+// let passward ;
+// if( a == 1020){
+//     passward = " tha right passward in entar tha get"
+// }
+ 
+// else if ( a == 321001){
+//   passward = "right passward entar your bharatpur...";
+// }
+// else if ( a == 302001){
+//     passward = " right passward entar your jaipur... ";
+// }
+// else if( a == 110001){
+//     passward = "right pin code entar your dehli...";
+// }
+// else if( a == 223007){
+//     passward = " right pin code entar your agra...";
+// }
+// else if(a == 321602){
+//     passward = " right pin code entar your nadbai...";
+// }
+// else{
+//     passward = " sorry rong pin code...?";
+// }
+
+// document.write(passward)
+
+
+// take usar input for two numbar 
+
+// let numbar1 = numbar(prompt("entar the value of numbar1 ..?"));
+// let numbar2 = numbar(prompt("entar the value of numbar2 ..?"));
+// const opreatar =prompt("entar opreatar(+,-,*,/,%)");
+// let resalt;
+
+// switch(opreatar){
+//     case "+":
+//         resalt = numbar1 + numbar2;
+//         document.write(` ${numbar1} + ${numbar2} = ${resalt}`);
+//         break;
+
+//         case "-":
+//         resalt = numbar1 - numbar2;
+//         document.write(` ${numbar1} - ${numbar2} = ${resalt}`);
+//         break;
+
+//         case "*":
+//         resalt = numbar1 * numbar2;
+//         document.write(` ${numbar1} * ${numbar2} = ${resalt}`);
+//         break;
+
+//         case "/":
+//         resalt = numbar1 / numbar2;
+//         document.write(` ${numbar1} / ${numbar2} = ${resalt}`);
+//         break;
+
+//         case "%":
+//         resalt = numbar1 % numbar2;
+//         document.write(` ${numbar1} % ${numbar2} = ${resalt}`);
+//         break;
+//         default:
+//         document.write("in rong value is operatar");
+// }
+
+
+let num1 = parseFloat(prompt("Enter the value of num1 ..?"));
+let num2 = parseFloat(prompt("Enter the value of num2 ..?"));
+const operator = prompt("Enter operator (+,-,*,/,%)");
+
+let result;
+
+ switch(operator) {
+   case "+":
+         result = num1 + num2;
+         document.write(`${num1} + ${num2} = ${result}`);
+         break;
+
+     case "-":
+         result = num1 - num2;
+         document.write(`${num1} - ${num2} = ${result}`);
+         break;
+
+     case "*":
+         result = num1 * num2;
+         document.write(`${num1} * ${num2} = ${result}`);
+         break;
+
+     case "/":
+         result = num1 / num2;
+         document.write(`${num1} / ${num2} = ${result}`);
+         break;
+
+   case "%":
+        result = num1 % num2;
+       document.write(`${num1} % ${num2} = ${result}`);
+       break;
+        
+    default:
+       document.write("Invalid operator");
+ }
+
+
+
+    </script>
+</body>
+</html>

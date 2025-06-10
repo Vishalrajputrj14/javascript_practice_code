@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+    <script>
+        // the join() method returns the array as a string.
+        // the elements will be separated by a specified separator. The default separator is comma (,).
+        let fruits = ["banana", "orange", "apple", "mango"];
+        document.getElementById("demo").innerHTML = fruits;
+        let energy = fruits.join();
+        document.getElementById("demo1").innerHTML = energy;
+
+        let tools = ["hammer", "screwdriver", "wrench", "saw"];
+        document.getElementById("demo2").innerHTML = tools;
+        let tool = tools.join(" and ");
+        document.getElementById("demo3").innerHTML = tool;
+
+        let cars = ["BMW", "Volvo", "Saab", "Ford"];
+        document.getElementById("demo5").innerHTML = cars;
+        let car = cars.join(" * ");
+        document.getElementById("demo5").innerHTML = car;
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //   looping over ab Array
+document.write("<br> <br>")
+let  heroes_looping = [ "mikuu", "laddu", "buggu", "duggu", "beto" , "vishal", ];
+
+for( let idx = 0; idx < heroes_looping.length ; idx++){
+document.write(heroes_looping[idx],"<br>" )
+}
+document.write("<br> <br>")
+// for oor of ka use kar ke 
+for( let city of heroes_looping){
+    document.write(city.toUpperCase() ,"<br>" )
+}
+
+
+
+//  for a given array with Marks of students, [85,94,55,56,75,60] find tha average marks of the entire class
+
+let marks = [85,94,55,56,75,60];  
+let sum = 0;
+for( let val of marks){
+    sum += val;
+} 
+let avg = sum/marks.length;
+document.write(`Average marks of the class is ${avg}`)                                     
+
+//  for a given array with prices of items -> [250,645,730,800,700,843,53], All the items have on after of 10% off them. cheng  the array to store final price after appling.
+
+
+document.write("<br> <br>") 
+    
+let items = [250, 645, 730, 700, 843, 53, 850];
+let i = 0;
+for(let price of items){
+    document.write(`value of index ${i} = ${price} <br>`);
+    let after = price / 10;
+    items[i] = items[i] - after;
+    document.write(`value after offer = ${items[i]} <br>`);
+    i++; // इंडेक्स को बढ़ाना
+}
+
+    
+    </script>
+</body>
+</html>

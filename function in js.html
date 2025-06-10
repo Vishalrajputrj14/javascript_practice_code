@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // block  of code that performs a specific task can be invoked whenever required
+
+
+         function myfunction(){
+            document.write("Hello World");
+        }
+        myfunction();
+        
+        document.write("<br>");
+
+        // function  => 2 numbar , sum
+
+        function sum(a,b){
+            return a+b;
+        }
+        // document.write(sum(2,3));
+        let result = sum(15,5);
+        document.write(result);
+
+        document.write("<br>");
+
+        function myfunc(){
+            mobj = {
+                a: 10,
+                b: 20
+            }
+        }
+        myfunc();
+        document.write(mobj.a);
+
+        document.write("<br>");
+
+        function sum1(y,x){
+            return y-x;
+        }
+        let result1 = sum1(15,5);
+        document.write(result1);
+
+        document.write("<br>");
+
+        function sum2(y,x){
+            return y*x;
+        }   
+        let result2 = sum2(15,5);
+        document.write(result2);
+
+        document.write("<br>");
+
+        function sum3(y,x){
+            return y/x;
+        }
+        let result3 = sum3(15,5);
+        document.write(result3);
+
+        document.write("<br>");
+
+        function sum4(y,x){
+            return y%x;
+        }
+        let result4 = sum4(15,5);
+        document.write(result4);
+
+        document.write("<br>");
+
+        function sum5(y,x){
+            return y**x;
+        }
+        let result5 = sum5(15,5);
+        document.write(result5);
+
+        //  Arrow function
+        document.write("<br>");
+
+        let sum6 = (y,x) => {
+            return y+x;
+        }
+        document.write(sum6(2 ,5));
+
+
+        document.write("<br>");
+        //  sum function using arrow function
+
+        function sum7(y,x){
+            return y+x;
+        }
+        let result7 = sum7(15,5);   
+        document.write(result7);
+
+        document.write("<br>");
+
+        // multiple function using arrow function
+
+        let sum8 = (y,x) => {
+            return y*x;
+        }
+        let result8 = sum8(15,5);
+        document.write(result8);
+
+        document.write("<br>");
+        // Create  a function using the "function" keyword that takes a string as an argument & returns the number of vowels in the string 
+
+
+        function countVowels(str) {
+            let count = 0;
+            const vowels = "aeiouAEIOU";
+            for (let char of str) {
+                if (vowels.includes(char)) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        let vowelCount = countVowels("Hello World");
+        document.write(vowelCount);
+
+
+        document.write("<br>");
+
+        function countVowels(str){
+            let count = 0;
+            for(const char of str){
+                if(char === "a" 
+                || char === "e" 
+                || char === "i"
+                || char === "o" 
+                || char === "u"){
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        let vowelCount1 = countVowels("vishal rajput mein ek din top coder banunga oor sabse bethar pese wala banunga oor sabe jada mentaly strong banunga");
+        document.write(vowelCount1);
+
+        document.write("<br>");
+
+        function countVowe(str){
+            let count = 0;
+            for(const char of str){
+                if(char === "a" 
+                || char === "e" 
+                || char === "i"
+                || char === "o" 
+                || char === "u"){
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        let vowelCount2 = countVowe("vishal rajput mein oor sabe jada mentaly strong banunga");
+        document.write(vowelCount2);
+
+
+        document.write("<br>");
+
+        let marks = [85, 92, 88, 96, 70, 100, 91];
+        let highScorers = marks.filter(mark => mark > 90);
+        document.write(highScorers.join(", "));
+
+
+
+        document.write("<br> <br>");
+
+        //  Map function  > creates a new array with the result of same operation. the value  its callback returns are used to from newarry 
+
+        let vishal = [ 89,55,92,90,98,];
+        vishal.map((val)=> {
+            document.write(val);
+        })
+
+        document.write("<br> <br>");
+    
+
+        let vishal1 = [90, 80, 70, 60, 50];
+        let vishal2 = vishal1.map((val) => {
+            return val * 2;
+        });
+
+        document.write(vishal2)
+        
+
+        document.write("<br> <br>");
+        let vishal6 = [5, 10 ,4 , 8, 12 ,14];
+        let vishal4 = vishal1.map((val) => {
+            return val % 2 === 0;
+        });
+
+        document.write(vishal4)
+
+        document.write("<br> <br>");    
+
+
+        //  filter function > creates a new array of elements that give true for a cadiion /filter.
+        //  eg>  all evan elements from an array
+
+            let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // odd numbers
+            let oddAarray = array.filter((val) => {
+                return val % 2 !== 0;
+            });
+            
+            document.write(oddAarray);
+
+        document.write("<br> <br>");
+
+    let  Aarry = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];// even numbers
+    let evanAarray = Aarry.filter((val) => {
+        return val % 2 === 0;
+    });
+
+    document.write(evanAarray);
+
+    document.write("<br> <br>");
+
+
+    //  reduce function  & method > Perform some operation & reduce the array to a single value. it returns that single value.
+
+
+    let numbers = [1, 2, 3, 4, 5];
+    // 0+1+2+3+4+5 = 15
+    let  initialValue = 0;
+    const total = numbers.reduce((acc, val) => {
+        return acc + val;
+    }, initialValue);
+
+    document.write(total);  // 15
+
+
+    document.write("<br> <br>");    
+
+    let numbers1 = [1, 2, 3, 4, 5,20];
+    // 0+1+2+3+4+5 = 15
+    let  initialValue1 = 0;
+    const output = numbers1.reduce((acc, val) => {
+        return acc > val ? acc : val;
+    }, initialValue1);
+
+    document.write(output);  // 20
+
+    document.write("<br> <br>");
+
+    let marks1 = [85, 92, 88, 96, 70, 80, 91];
+    let toppers = marks1.filter((val) => {
+        return val > 90;
+    });
+
+   document.write(toppers)
+
+
+    document.write("<br> <br>");
+
+
+
+    let n = prompt("Enter your number");
+
+let arr = [];
+
+for (let i = 1; i <= n; i++) {
+    arr[i - 1] = i;
+}
+
+document.write(arr.join(", "));
+document.write("<br><br>");
+
+let sum = arr.reduce((res10, curr11) => {
+    return res10 + curr11;
+});
+
+document.write("Sum: " + sum);
+document.write("<br><br>");
+
+let factorial = arr.reduce((res2, curr4) => {
+    return res2 * curr4;
+}, 1);
+
+document.write("Factorial: " + factorial);
+
+
+
+    </script>
+
+</body>
+</html>

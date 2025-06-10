@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+        let numTerms = parseInt(prompt("Enter the number of terms"));
+        let n1 = 0;
+        n2 = 1;
+        nextTerm;
+
+        document.write("Fibonacci Sequence: <br>");
+        for (let i = 1; i <= numTerms; i++) {
+            document.write(n1 + " ");
+            nextTerm = n1 + n2;
+            n1 = n2;
+            n2 = nextTerm;
+        }
+
+
+
+    </script>
+</body>
+</html>

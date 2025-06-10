@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vishal rajput</title>
+</head>
+<body>
+    <script>
+        function emp(id, name, salary){
+            this.id = id;
+            this.name = name;
+            this.salary = salary;
+        }
+        let emp1 = new emp(101, "vishal", 50000);
+        let emp2 = new emp(102, "mahak", 50000);
+        document.write(" employe id = "+emp1.id + " <br>" + emp1.name + "<br> " + emp1.salary);
+        document.write("<br> <br>");
+        document.write(" employe id = "+emp2.id + " <br>" + emp2.name + "<br> " + emp2.salary);
+    </script>
+</body>
+</html>

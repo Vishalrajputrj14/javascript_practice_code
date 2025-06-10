@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        
+        let num = 5.5;
+        let result = Math.ceil(num);
+        document.getElementById("demo").innerHTML = result;
+
+        let num1 = 5.1;
+        let result1 = Math.ceil(num1);
+        document.getElementById("demo1").innerHTML = result1;
+
+        let num2 = 5.9;
+        let result2 = Math.ceil(num2);
+        document.getElementById("demo2").innerHTML = result2;
+
+        let num3 = 5.0;
+        let result3 = Math.ceil(num3);
+        document.getElementById("demo3").innerHTML = result3;
+
+        document.write( Math.ceil(7.2 ) +"<br>");
+        document.write( Math.ceil(0.60) +"<br>");
+    </script>
+</body>
+</html>

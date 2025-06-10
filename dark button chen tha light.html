@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <style>
+    .dark{
+        background-color: black;
+        color: white;
+    }
+    .light{
+        background-color: white;
+        color: black;
+    }
+ </style>
+ <body>
+    <button id="btn">chang mode</button>
+
+    <p>vishal rajput my classs in javascript</p>
+
+    <script> 
+        let modebtn = document.querySelector("#btn");
+        let carrMode = "light";// dark mode
+       let body = document.querySelector("body");
+
+
+
+        modebtn.addEventListener("click", () => {
+    console.log("you are trying to change the mode");
+
+    if (carrMode === "light") { // "light" कोट्स में होना चाहिए
+        carrMode = "dark";
+       body.classList.add("dark");
+       body.classList.remove("light");
+    } else {
+        carrMode = "light";
+        body.classList.add("light");
+        body.classList.remove("dark");
+    }
+    
+    console.log(carrMode);
+});
+
+        
+    // let modebtn = document.querySelector("#btn");
+    // let carrMode = "light"; // default mode is light
+
+    // modebtn.addEventListener("click", () => { // Corrected "cilick" to "click"
+
+    //    if (carrMode === "light") { // Added quotes around "light"
+    //        carrMode = "dark";
+    //    } else {
+    //        carrMode = "light";
+    //    }
+
+    //    console.log(carrMode);
+    // });
+
+
+
+      
+    </script>
+ </body>
+ </html>

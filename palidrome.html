@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         
+
+         let a =  parseInt(prompt("entar your numbar "));
+         let sum = 0 ;
+         let b;
+         let vishal = a;
+         while(a > 0){
+            b = a % 10;
+            sum = sum * 10 + b ;
+            a = parseInt(a / 10);
+
+         }
+         document.write(sum);
+         if(vishal === sum){
+            document.write("numbar is palidrome ") 
+         }
+         else{
+            
+            document.write("not  is palidrome ")
+
+         }
+
+//          let a = parseInt(prompt("Enter your number "));
+// let sum = 0;
+// let b;
+// let originalNum = a;
+
+// while (a > 0) {
+//     b = a % 10;
+//     sum = sum * 10 + b;
+//     a = parseInt(a / 10);
+// }
+
+// document.write(sum);
+// if (originalNum === sum) {
+//     document.write("Number is palindrome ");
+// } else {
+//     document.write("Not a palindrome ");
+// }
+
+
+// document.write("<br> <br>");
+//     const num1 = prompt("entar your numbar ");
+//     const num2 = prompt(" entar your second numbar ");
+//     const num3 = prompt(" entar your last numbaar ");
+
+//     const langest =Math.max(num1, num2, num3); // min number 
+
+//     document.write(`larsst numbar  ${langest}`)
+
+
+    document.write("<br><br>");
+
+    let val = prompt("entar your first number ");
+    let val1 = prompt(" entar your second number");
+    let val2 = prompt("etnar your last number ")
+
+    const smallNumber = Math.min(val,val1 ,val2);
+    document.write(` small number ${smallNumber}`);
+
+
+    
+    </script>
+
+
+</body>
+</html>

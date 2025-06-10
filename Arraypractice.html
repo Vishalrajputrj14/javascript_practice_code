@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p  id="demo"></p>
+    <script>
+        let companies = ["Google", "Facebook", "Amazon", "Microsoft", "Apple"];
+        companies.shift(2);
+        document.getElementById("demo").innerHTML = companies;
+        companies.splice(companies.indexOf("apple "), 1, "vishal");
+        
+        let aaron = companies.unshift("Aaron");
+        document.write(aaron);
+        let b = companies.pop();
+        document.write(b);
+
+document.write("<br><br>");
+
+        let newCompanies = ["Bloomberg", "Google", "Facebook", "Amazon", "Microsoft", "Apple"];
+        newCompanies.shift();
+        newCompanies.splice(newCompanies.indexOf("Uber"), 1, "Ola");
+        newCompanies.push("Amazon");
+        document.write(newCompanies);
+        
+        mobj,myfunc();
+        document.write(mobj.a);
+        setTimeout( () => {
+            console.log("hyeee vishal")
+
+        },3000);
+
+        document.write(" mei neeche wali script hoon");
+ 
+ 
+   
+    </script>
+</body>
+</html>

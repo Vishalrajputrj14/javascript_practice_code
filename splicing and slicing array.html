@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+         // The splice() method can be used to add new items to an array:
+         // The first parameter (2) defines the position where new elements should be added (spliced in).
+         // The second parameter (0) defines how many elements should be removed.
+      // The rest of the parameters ("Chihuahua") define the new elements to be added.
+        
+        const dogs = ["Bulldog", "Beagle", "Labrador", "Husky", "Dalmatian"];
+        const heroes = ["Superman", "Batman", "Spiderman", "Ironman", "Thor"];
+        document.getElementById("demo").innerHTML = dogs;
+        dogs.splice(1, 0, "Chihuahua");
+        document.getElementById("demo").innerHTML = dogs;
+         
+     
+                                                           
+    </script>
+</body>
+</html>

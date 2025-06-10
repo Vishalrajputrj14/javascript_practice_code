@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="demo"></p>
+    <p class="demo"></p>
+    <script>
+      
+       const  cars = ["BMW", "Volvo", "Saab", "Ford"];
+        document.querySelector(".demo").innerHTML = cars;
+        delete cars[0];
+        document.querySelector(".demo").innerHTML = cars;
+        cars[0] = "Toyota";
+        document.querySelector(".demo").innerHTML = cars;
+
+
+
+        //         const cars = ["BMW", "Volvo", "Saab", "Ford"];
+
+        // // Display the array in the element with class 'demo'
+        // document.getElementsByClassName("demo")[1].innerHTML = cars;
+
+        // // Remove the third element ("Saab")
+        // delete cars[2];
+        // // Display the modified array
+        // document.getElementsByClassName("demo")[1].innerHTML = cars;
+
+        // // Change the first element to "Toyota"
+        // cars[3] = "Toyota";
+        // // Display the modified array
+        // document.getElementsByClassName("demo")[1].innerHTML = cars;
+
+            </script>
+        </body>
+        </html>

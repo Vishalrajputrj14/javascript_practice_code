@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- the shift() method element and shift all other elemenets to a lower index. -->
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script>
+        let bharatpur = ["jaipur", "ajmer", "kota", "bikaner"];
+        document.getElementById("demo").innerHTML = bharatpur;
+        bharatpur.shift();
+        document.getElementById("demo1").innerHTML = bharatpur;
+
+        let rajasthan = ["jaipur", "ajmer", "kota", "bikaner"]; 
+        document.getElementById("demo3").innerHTML = rajasthan;
+        let shifted = rajasthan.shift();
+        document.getElementById("demo4").innerHTML = shifted;
+    </script>
+</body>
+</html>

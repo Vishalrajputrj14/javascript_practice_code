@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+
+    <script>
+let num = 123;
+let str = num.toString();
+document.write(str); // "123"
+document.write("<br><br>")
+let bool = true;
+let boolStr = bool.toString();
+document.write(boolStr); // "true"
+
+document.write("<br><br>")
+
+let arr = [1, 2, 3];
+let arrStr = arr.toString();
+document.write(arrStr); // "1,2,3"
+
+document.write("<br><br>")
+
+function add(a,b) {  
+  return vi + rj;  
+}  
+document.write(add.toString());  
+document.write(typeof add.toString());  
+document.write("<br><br>")
+
+function papaji(vishal,rajputana){
+    return vishal + rajputana;
+}
+document.write(papaji.toString());
+
+
+
+
+
+
+
+
+</script>
+<h2>Comparison Website</h2>
+<form id="compareForm">
+    <label for="item1">Item 1:</label>
+    <input type="text" id="item1" name="item1"><br><br>
+    <label for="item2">Item 2:</label>
+    <input type="text" id="item2" name="item2"><br><br>
+    <button type="button" onclick="compareItems()">Compare</button>
+</form>
+<p id="result"></p>
+
+<script>
+    function compareItems() {
+        let item1 = document.getElementById('item1').value;
+        let item2 = document.getElementById('item2').value;
+        let result = document.getElementById('result');
+
+        if (item1 === item2) {
+            result.innerHTML = "Items are the same.";
+        } else {
+            result.innerHTML = "Items are different.";
+        }
+    }
+</script>
+</body>
+</html>

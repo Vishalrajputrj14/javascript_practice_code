@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- the pop() method removes the last element from an array -->
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+
+    <script>
+        let fruits = ["banana", "orange", "apple", "mango"];
+        document.getElementById("demo").innerHTML = fruits;
+        fruits.pop();
+        document.getElementById("demo1").innerHTML = fruits;
+
+        let tools = ["hammer", "screwdriver", "wrench", "saw"];
+        document.getElementById("demo2").innerHTML = tools;
+        let removed = tools.pop();
+        document.getElementById("demo3").innerHTML = tools;
+        document.getElementById("demo4").innerHTML = removed;
+
+        let cars = ["BMW", "Volvo", "Saab", "Ford"];
+        document.getElementById("demo5").innerHTML = cars;
+        cars.pop();
+        document.getElementById("demo5").innerHTML = cars;
+    </script>
+</body>
+</html>

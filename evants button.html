@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button ondblclick="document.write('i am fine  and you');alert(' how are you ')"> click me </button>
+    <button id="btn">click me </button>
+    <div style="width: 200px; height: 200px; background-color: red;"> my name vishal rajput and my proprty my box</div>
+    <script>
+        let btn = document.querySelector("#btn");
+        btn.onclick = (e) => {
+            console.log(e);// it will give you the event object dekhne ke liye
+             document.write("handler 1");
+            let a = 25;
+             a++;
+             console.log(a);
+
+        };
+
+         btn.onclick = () => {
+            document.write("handler 2");
+           
+         };
+
+
+        let div = document.querySelector("div");
+        div.onmouseover = () => {
+            console.log("you are inside div");
+        };
+
+
+    </script>
+</body>
+</html>
